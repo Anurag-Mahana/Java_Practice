@@ -1,8 +1,16 @@
-package Linked_List_Practise;
+package zPrac_Linked_List;
 import java.util.*;
 
+public class LinkedListUse {
 
-public class LinkedListOperations {
+	public static Node<Integer> createLinkedList(){ //Manual way of creating nodes
+		Node<Integer> n1=new Node<>(10);
+		Node<Integer> n2=new Node<>(20);
+		Node<Integer> n3=new Node<>(30);
+		n1.next=n2;
+		n2.next=n3;
+		return n1;
+	}
 
 	public static Node<Integer> takeInput(){  //Creating nodes by taking input
 		try(Scanner sc=new Scanner(System.in)){
@@ -50,7 +58,7 @@ public class LinkedListOperations {
 			return head;
 		}
 	}
-
+	
 	public static Node<Integer> deleteNode(Node<Integer> head, int pos){
 		if(head==null) {
 			return head;
@@ -58,7 +66,7 @@ public class LinkedListOperations {
 		if(pos==0) {
 			return head.next;
 		}
-
+		
 		int curr=0;
 		Node<Integer> currNode=head;
 		while(currNode!=null && curr<(pos-1)) {
@@ -102,49 +110,20 @@ public class LinkedListOperations {
 		System.out.println("\nThe length of the linked list is: "+count);
 	}
 
-
-
-
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		try(Scanner sc=new Scanner(System.in)){
-			System.out.println("Create a Linked List:");
 			Node<Integer> head=takeInput();
-
-			while(true) {
-				System.out.println("\nPlease select from the following options:\n1-View Existing list \n2-View Length of the list \n3-Insert into the list \n4-Delete from the list");
-				int ch=sc.nextInt();
-				switch(ch) {
-				
-				case 1:
-					print(head);
-					break;
-					
-				case 2:
-					lengthList(head);
-					break;
-					
-				case 3:
-					System.out.println("Enter the positon where you want to enter:");
-					int pos=sc.nextInt();
-					System.out.println("Enter the value which you want to enter:");
-					int ele=sc.nextInt();
-					insertNode(head,pos,ele);
-					break;
-					
-				case 4:
-					System.out.println("Enter the positon where you want to delete:");
-					int delPos=sc.nextInt();
-					deleteNode(head,delPos);
-					break;
-					
-				default: 
-					System.exit(0);
-
-				}
-			}
+			lengthList(head);
+			print(head);
+			System.out.println();
+			printNode(head,2);
+			insertNode(head,2,15);
+			lengthList(head);
+			print(head);
+			deleteNode(head,3);
+			lengthList(head);
+			print(head);
+			
 		}
-//		catch(Exception e) {
-//			System.out.println("Invalid inputs entered.");
-//		}
 	}
 }

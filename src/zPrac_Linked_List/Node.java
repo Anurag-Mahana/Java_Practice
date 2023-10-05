@@ -1,4 +1,4 @@
-package Linked_List;
+package zPrac_Linked_List;
 import java.util.*;
 
 public class Node<T>{

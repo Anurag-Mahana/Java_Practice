@@ -2,6 +2,7 @@ package Z1_practice;
 
 import java.util.Scanner;
 
+
 public class z11_Test {
 	public static void displayArr(int arr[]) {
 		for(int i=0;i<arr.length;i++)
@@ -39,3 +40,4 @@ public class z11_Test {
 	}
 
 }
+
