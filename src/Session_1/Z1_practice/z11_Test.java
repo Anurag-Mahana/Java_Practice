@@ -1,4 +1,4 @@
-package Z1_practice;
+package Session_1.Z1_practice;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package SingleLL;
+package Session_1.SingleLL;
 
 public class Node<T> {
 	T data;

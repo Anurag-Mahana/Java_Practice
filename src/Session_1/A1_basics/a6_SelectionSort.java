@@ -1,4 +1,4 @@
-package A1_basics;
+package Session_1.A1_basics;
 import java.util.*;
 
 public class a6_SelectionSort {

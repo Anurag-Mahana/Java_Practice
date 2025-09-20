@@ -1,4 +1,4 @@
-package zPrac_Linked_List;
+package Session_1.zPrac_Linked_List;
 import java.util.*;
 
 public class LinkedListUse {

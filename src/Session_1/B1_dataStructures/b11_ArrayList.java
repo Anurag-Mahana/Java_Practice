@@ -1,4 +1,4 @@
-package B1_dataStructures;
+package Session_1.B1_dataStructures;
 import java.util.*;
 import java.util.ArrayList;
 
