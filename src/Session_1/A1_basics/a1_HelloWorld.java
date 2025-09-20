@@ -1,4 +1,4 @@
-package A1_basics;
+package Session_1.A1_basics;
 
 public class a1_HelloWorld {
 
