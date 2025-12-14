@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class SingleLL<T> {
-
+//Node template.
 	public static class Node<T>{
 		T data;
 		Node<T> next;
